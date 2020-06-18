@@ -1,0 +1,61 @@
+.footer {
+    background-color: #363636;
+    padding-left: 15px;
+    padding-right: 15px;
+    p {
+        color: $white;
+        font-size: $font16;
+        font-weight: $fontNormal;
+        opacity: 0.4;
+        
+        @include breakpoint(small) {
+            font-size: $font15;
+        }
+        
+        @include breakpoint(x-small) {
+            font-size: $font14;
+        }
+    }
+    ul {
+        li {
+            display: inline-block;
+            margin-right: 30px;
+            @include breakpoint(xxxlarge) {
+                margin-right: 20px;
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+            a {
+                color: $white;
+                font-size: $font16;
+                font-weight: $fontNormal;
+                opacity: 0.4;
+        
+                @include breakpoint(small) {
+                    font-size: $font15;
+                }
+                
+                @include breakpoint(x-small) {
+                    font-size: $font14;
+                }
+                &:hover, &:focus, &:active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .footer-social {
+        ul {
+            li {
+                margin-right: 30px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+                a {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}

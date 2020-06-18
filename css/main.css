@@ -1,0 +1,2239 @@
+/* border-radius */
+/* Placeholder */
+/* Box Sizing */
+/* box-shadow */
+/* breakpoints */
+/* Retina */
+/* Background image */
+/* line 89, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.background-no-repeat {
+  background-repeat: no-repeat;
+}
+
+/* line 92, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.background-position-center {
+  background-position: center;
+}
+
+/* line 95, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.background-position-center-top {
+  background-position: center top;
+}
+
+/* line 98, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.background-position-center-bottom {
+  background-position: center bottom;
+}
+
+/* line 101, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.background-position-center-right {
+  background-position: center right;
+}
+
+/* line 104, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.background-position-center-left {
+  background-position: center left;
+}
+
+/* line 107, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.background-attachment-fixed {
+  background-attachment: fixed;
+}
+
+/* line 110, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.background-cover {
+  background-size: cover;
+}
+
+/* line 113, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.background-contain {
+  background-size: contain;
+}
+
+/* Print */
+/* transition */
+/* ===== transformation ===== */
+/* rotate */
+/* scale */
+/* translate */
+/* skew */
+/* transform origin */
+/* ===== transformation Ends ===== */
+/* Fonts*/
+/* primary color */
+/* base colors */
+/* background color */
+/* font size */
+/* font weight */
+/* line 52, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_variables.scss */
+.bg-light-grey {
+  background-color: #F9F9F9;
+}
+
+/* line 55, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_variables.scss */
+.bg-orange {
+  background-color: #f37321;
+}
+
+/* line 58, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_variables.scss */
+.bg-grey {
+  background-color: #F6F6F6;
+}
+
+/* line 61, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_variables.scss */
+.bg-darkGrey {
+  background-color: #373737;
+}
+
+/* line 64, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_variables.scss */
+.bg-red {
+  background-color: #f37321;
+}
+
+/* line 67, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_variables.scss */
+.bg-pink {
+  background-color: #FFBABA;
+}
+
+/* line 70, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_variables.scss */
+.bg-light-blue {
+  background-color: #DEF9F9;
+}
+
+/* line 73, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_variables.scss */
+.font-weight-semibold {
+  font-weight: 600 !important;
+}
+
+/* line 1, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+html {
+  position: relative;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+/* line 7, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+body {
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* line 20, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  outline: 0px;
+  outline-offset: -2px;
+}
+
+/* line 25, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+a {
+  outline: none;
+  border: 0px;
+  text-decoration: none;
+  -moz-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+}
+/* line 33, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+a:hover, a:active, a:focus {
+  -moz-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 41, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+ul,
+li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 53, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 58, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.no-Padd {
+  padding: 0 !important;
+}
+
+/* line 62, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.no-Marg {
+  margin: 0 !important;
+}
+
+/* line 71, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+input:focus,
+a:focus,
+button:focus,
+.btn:focus,
+textarea:focus {
+  outline: none !important;
+}
+
+/* line 76, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+img {
+  max-width: 100%;
+}
+
+/* Container style */
+/* line 82, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.container {
+  max-width: 90%;
+  margin: 0px auto;
+  /* 1280 px*/
+}
+@media (max-width: 1280px) {
+  /* line 82, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* line 90, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.h-100vh {
+  min-height: 70vh;
+  /* 1199 px*/
+}
+@media (max-width: 1199px) {
+  /* line 90, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .h-100vh {
+    height: 100%;
+  }
+}
+
+/* button */
+/* line 98, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.btn {
+  color: #373737;
+  background-color: white;
+  border: solid 2px white;
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  /* 1600 px*/
+  /* 1600 px*/
+}
+@media (max-width: 1600px) {
+  /* line 98, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .btn {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 98, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .btn {
+    padding: 10px 20px;
+  }
+}
+/* line 122, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.btn:hover, .btn:focus, .btn:active {
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  background-color: #f37321;
+  border-color: #f37321;
+  color: white;
+}
+/* line 129, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.btn.orange_btn {
+  color: white;
+  background-color: #f37321;
+  border-color: #f37321;
+}
+/* line 136, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.btn.orange_btn:hover, .btn.orange_btn:focus, .btn.orange_btn:active {
+  background-color: white;
+  border-color: #f37321;
+  color: #f37321;
+}
+/* line 142, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.btn.red_border_btn {
+  color: #f37321;
+  background-color: white;
+  border-color: #f37321;
+}
+/* line 149, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.btn.red_border_btn:hover, .btn.red_border_btn:focus, .btn.red_border_btn:active {
+  background-color: #f37321 !important;
+  border-color: #f37321;
+  color: white !important;
+}
+
+/* Common top bottom padding */
+/* line 158, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.comnTBpadd {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  /* 1600 px*/
+  /* 1600 px*/
+  /* 767 px*/
+  /* 480 px*/
+}
+@media (max-width: 1600px) {
+  /* line 158, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .comnTBpadd {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 158, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .comnTBpadd {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 158, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .comnTBpadd {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 158, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .comnTBpadd {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+/* line 183, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.comnLRpadd {
+  padding-left: 140px;
+  padding-right: 140px;
+  /* 1600 px*/
+  /* 1600 px*/
+}
+@media (max-width: 1600px) {
+  /* line 183, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .comnLRpadd {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 183, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .comnLRpadd {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+/* line 198, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.comnpara {
+  font-size: 14px;
+  color: #373737;
+  font-weight: 400;
+  /* 1600 px*/
+  /* 767 px*/
+}
+@media (max-width: 1400px) {
+  /* line 198, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .comnpara {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 198, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .comnpara {
+    font-size: 14px;
+  }
+}
+/* line 209, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.comnpara.light {
+  font-weight: 300;
+}
+/* line 213, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.comnpara.regular {
+  font-weight: 400;
+}
+/* line 217, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.comnpara.semiBold {
+  font-weight: 600;
+}
+/* line 221, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.comnpara.bold {
+  font-weight: 700;
+}
+
+/* line 226, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.fixedWidth {
+  max-width: 86%;
+  width: 100%;
+  margin: 0px auto;
+  /* 1280 px*/
+  /* 1199 px*/
+}
+@media (max-width: 1280px) {
+  /* line 226, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .fixedWidth {
+    max-width: 90%;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 226, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .fixedWidth {
+    max-width: 100%;
+  }
+}
+
+/* line 238, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.mw-80 {
+  max-width: 80%;
+  width: 100%;
+  margin: 0px auto;
+  /* 1600 px*/
+  /* 1280 px*/
+}
+@media (max-width: 1400px) {
+  /* line 238, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .mw-80 {
+    max-width: 85%;
+  }
+}
+@media (max-width: 1280px) {
+  /* line 238, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .mw-80 {
+    max-width: 100%;
+  }
+}
+
+/* line 251, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.effect-1 {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+/* line 257, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.effect-1 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #373737;
+  transition: 0.4s;
+}
+
+/* line 267, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.effect-1:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+/* line 272, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.effect-16 {
+  border: 0;
+  padding: 4px 0;
+  border-bottom: 1px solid #d6d6d6;
+  background-color: transparent;
+}
+
+/* line 279, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.effect-16 ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #373737;
+  transition: 0.4s;
+}
+
+/* line 290, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.effect-16:focus ~ .focus-border,
+.has-content.effect-16 ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+/* line 295, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.effect-16 ~ label {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+
+/* line 306, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.effect-16:focus ~ label,
+.has-content.effect-16 ~ label {
+  top: -26px;
+  color: #373737 !important;
+  transition: 0.3s;
+  /* 480 px*/
+}
+@media (max-width: 480px) {
+  /* line 306, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .effect-16:focus ~ label,
+  .has-content.effect-16 ~ label {
+    top: -20px;
+  }
+}
+
+/* check box style */
+/* line 318, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.my-check {
+  display: inline-block;
+  padding-left: 30px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 325, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.checkBox {
+  display: block;
+  float: left;
+  height: 18px;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  transform: none;
+  width: 19px;
+}
+
+/* line 337, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.checkBox > label {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  cursor: pointer;
+  float: left;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  z-index: 9;
+}
+
+/* line 349, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.checkBox input[type="checkbox"] {
+  height: 100%;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 359, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.checkBox input[type="checkbox"]:hover + label, .checkBox input[type="checkbox"]:active + label {
+  border-color: #373737;
+}
+
+/* line 362, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.checkBox input[type="checkbox"]:checked + label::after {
+  border-color: #373737;
+  opacity: 1;
+}
+
+/* line 366, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.checkBox input[type="checkbox"]:checked + label {
+  border-color: #373737;
+}
+
+/* line 369, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.checkBox label::after {
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 0 0 2px 2px;
+  content: "";
+  height: 6px;
+  left: 4px;
+  opacity: 0;
+  position: absolute;
+  top: 4px;
+  transform: rotate(-45deg) !important;
+  width: 10px;
+}
+
+/* line 382, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.lablel {
+  color: #373737 !important;
+  float: left;
+  font-size: 15px;
+  font-weight: 400 !important;
+  line-height: 20px;
+  white-space: normal;
+  margin: 0;
+  margin-top: -3px;
+}
+
+/* line 392, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+a:hover, a:focus, a:active {
+  color: #373737;
+}
+
+/* check box style end */
+/* Radio box style */
+/* line 398, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.my-radio {
+  display: inline-block;
+  float: none;
+  padding-left: 25px;
+  position: relative;
+  text-align: left;
+  vertical-align: middle;
+  width: auto;
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  /* line 398, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+  .my-radio {
+    padding-left: 25px;
+  }
+}
+/* line 410, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.my-radio > label {
+  color: #888888;
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  white-space: normal;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* line 421, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.radioBox {
+  cursor: pointer;
+  float: left;
+  height: 18px;
+  width: 18px;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  vertical-align: middle;
+}
+/* line 432, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.radioBox input[type="radio"] {
+  cursor: pointer;
+  height: 100% !important;
+  left: 0;
+  margin: 0;
+  opacity: 0;
+  position: absolute !important;
+  top: 0;
+  width: 100% !important;
+  z-index: 10;
+}
+/* line 443, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.radioBox > label {
+  background: #fff;
+  border: 1px solid #373737;
+  border-radius: 100px;
+  cursor: pointer;
+  float: left;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  z-index: 9;
+}
+/* line 454, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.radioBox > label:after {
+  content: "";
+  background-color: #f37321;
+  border-radius: 100px;
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  transform: rotate(-45deg) !important;
+}
+/* line 467, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.radioBox input[type="radio"]:hover + label, .radioBox input[type="radio"]:active + label {
+  border-color: #f37321;
+}
+/* line 473, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.radioBox input[type="radio"]:checked + label::after {
+  border-color: #f37321;
+  opacity: 1;
+}
+
+/* line 480, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.my-radio.checked .label, .my-radio.checked > label, .my-check.checked .label, .my-check.checked > label {
+  color: #373737;
+}
+
+/* Radio box style end */
+/* Custom Pagination */
+/* line 489, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.customPagination {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+/* line 494, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.customPagination nav .pagination {
+  justify-content: center;
+}
+/* line 496, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.customPagination nav .pagination .page-item {
+  margin-right: 15px;
+}
+/* line 498, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.customPagination nav .pagination .page-item:last-child {
+  margin-right: 0px;
+}
+/* line 500, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.customPagination nav .pagination .page-item:last-child .page-link {
+  background-color: white;
+  border-color: #f37321;
+  color: #f37321;
+}
+/* line 507, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.customPagination nav .pagination .page-item.disabled .page-link {
+  border-color: #d6d6d6;
+  background-color: white;
+  color: #d6d6d6;
+  cursor: not-allowed;
+}
+/* line 516, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.customPagination nav .pagination .page-item.morepages .page-link:hover, .customPagination nav .pagination .page-item.morepages .page-link:focus, .customPagination nav .pagination .page-item.morepages .page-link:active, .customPagination nav .pagination .page-item.morepages .page-link.active {
+  color: #f37321;
+  cursor: initial;
+}
+/* line 522, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.customPagination nav .pagination .page-item .page-link {
+  font-weight: 600;
+  font-size: 20px;
+  background-color: white;
+  border-color: white;
+  color: #f37321;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 529, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.customPagination nav .pagination .page-item .page-link:hover, .customPagination nav .pagination .page-item .page-link:focus, .customPagination nav .pagination .page-item .page-link:active, .customPagination nav .pagination .page-item .page-link.active {
+  background-color: #f37321;
+  border-color: #f37321;
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+/* line 536, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.customPagination nav .pagination .page-item .page-link span {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+/* line 547, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_base.scss */
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2825) !important;
+}
+
+/* line 1, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar {
+  background-color: white;
+  -moz-transition: all ease 0.6s;
+  -o-transition: all ease 0.6s;
+  -webkit-transition: all ease 0.6s;
+  transition: all ease 0.6s;
+  backface-visibility: hidden;
+  padding: 0 1.5rem;
+  /* 767 px*/
+}
+@media (max-width: 767px) {
+  /* line 1, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar {
+    padding: 0 1rem;
+  }
+}
+/* line 9, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar .navbar-brand {
+  width: 200px;
+  /* 1199 px*/
+}
+@media (max-width: 1199px) {
+  /* line 9, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar .navbar-brand {
+    width: 160px;
+  }
+}
+/* line 20, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar .navbar-collapse {
+  /* 991 px*/
+}
+@media (max-width: 991px) {
+  /* line 20, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar .navbar-collapse {
+    position: absolute;
+    right: 10px;
+    top: calc(100% + 0px);
+    background-color: white;
+    min-width: 270px;
+    text-align: right;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 6px #8b8b8b;
+    box-shadow: 0px 0px 6px #8b8b8b;
+  }
+  /* line 30, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar .navbar-collapse::before {
+    position: absolute;
+    top: -8px;
+    content: '';
+    border-bottom: solid 8px #fff;
+    border-left: solid 8px transparent;
+    border-right: solid 8px transparent;
+    right: 32px;
+    z-index: 1;
+  }
+  /* line 40, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar .navbar-collapse::after {
+    position: absolute;
+    top: -10px;
+    content: '';
+    border-bottom: solid 10px #ddd;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    right: 30px;
+    z-index: 0;
+  }
+  /* line 50, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar .navbar-collapse .navbar-nav {
+    /* 991 px*/
+  }
+}
+@media (max-width: 991px) and (max-width: 991px) {
+  /* line 50, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar .navbar-collapse .navbar-nav {
+    padding: 10px 0px;
+  }
+  /* line 53, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar .navbar-collapse .navbar-nav .nav-item {
+    border-bottom: solid 1px #ddd;
+  }
+  /* line 55, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar .navbar-collapse .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+}
+/* line 63, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar.navbar-dark {
+  background-color: white;
+}
+/* line 65, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar.navbar-dark .navbar-toggler {
+  color: white;
+  border-color: #f37321;
+  background: #f37321;
+  padding: .25rem .35rem;
+}
+/* line 70, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar.navbar-dark .navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+  background-size: 100%;
+  background-color: #fff;
+  height: 2px;
+  width: 22px;
+  margin-top: -3px;
+  position: relative;
+}
+/* line 78, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar.navbar-dark .navbar-toggler .navbar-toggler-icon::before {
+  position: absolute;
+  content: '';
+  top: -6px;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  display: inline-block;
+}
+/* line 88, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar.navbar-dark .navbar-toggler .navbar-toggler-icon::after {
+  position: absolute;
+  content: '';
+  bottom: -6px;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  display: inline-block;
+}
+/* line 103, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar.navbar-dark .navbar-nav .nav-item.active .nav-link {
+  color: #f37321;
+  outline: 0;
+}
+/* line 109, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar.navbar-dark .navbar-nav .nav-link {
+  color: #707070;
+  border: 0;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 2rem 1rem;
+  /* 991 px*/
+}
+/* line 115, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar.navbar-dark .navbar-nav .nav-link:hover, .navbar.navbar-dark .navbar-nav .nav-link.active {
+  color: #f37321;
+  outline: 0;
+}
+@media (max-width: 991px) {
+  /* line 109, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar.navbar-dark .navbar-nav .nav-link {
+    padding: 10px 1rem;
+  }
+}
+/* line 128, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+.navbar.sticky {
+  padding: 0px 1.5rem;
+  -webkit-box-shadow: 0px 0px 6px #bfbebe;
+  box-shadow: 0px 0px 6px #bfbebe;
+  /* 767 px*/
+}
+@media (max-width: 767px) {
+  /* line 128, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_header.scss */
+  .navbar.sticky {
+    padding: 0px  1rem;
+  }
+}
+
+/* line 1, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+.footer {
+  background-color: #363636;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 5, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+.footer p {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.4;
+  /* 767 px*/
+  /* 480 px*/
+}
+@media (max-width: 767px) {
+  /* line 5, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+  .footer p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 5, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+  .footer p {
+    font-size: 14px;
+  }
+}
+/* line 20, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+.footer ul li {
+  display: inline-block;
+  margin-right: 30px;
+  /* 1600 px*/
+}
+@media (max-width: 1400px) {
+  /* line 20, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+  .footer ul li {
+    margin-right: 20px;
+  }
+}
+/* line 26, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+.footer ul li:last-child {
+  margin-right: 0px;
+}
+/* line 29, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+.footer ul li a {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.4;
+  /* 767 px*/
+  /* 480 px*/
+}
+@media (max-width: 767px) {
+  /* line 29, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+  .footer ul li a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 29, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+  .footer ul li a {
+    font-size: 14px;
+  }
+}
+/* line 42, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+.footer ul li a:hover, .footer ul li a:focus, .footer ul li a:active {
+  opacity: 1;
+}
+/* line 50, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+.footer .footer-social ul li {
+  margin-right: 30px;
+}
+/* line 52, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+.footer .footer-social ul li:last-child {
+  margin-right: 0px;
+}
+/* line 55, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/layouts/_footer.scss */
+.footer .footer-social ul li a {
+  font-size: 26px;
+}
+
+/* Home slider */
+/* line 2, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.home-container {
+  background-image: url("../images/sliderbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 1199 px*/
+  /* 991 px*/
+  /* 767 px*/
+}
+@media (max-width: 1199px) {
+  /* line 2, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container {
+    padding-left: 35px;
+    padding-right: 35px;
+    background-position: center;
+  }
+}
+@media (max-width: 991px) {
+  /* line 2, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container {
+    background-position: left 30% center;
+  }
+}
+@media (max-width: 767px) {
+  /* line 2, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container {
+    padding: 30px 30px 60px 30px;
+  }
+}
+/* line 19, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.home-container #homeSlider {
+  margin-bottom: 100px;
+  /* 1199 px*/
+  /* 767 px*/
+}
+@media (max-width: 1199px) {
+  /* line 19, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 19, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider {
+    margin-bottom: 0px;
+    width: 100% !important;
+    padding-right: 0px !important;
+  }
+}
+/* line 29, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.home-container #homeSlider .carousel-indicators {
+  right: auto;
+  left: 0;
+  bottom: -40%;
+  margin-right: 0;
+  margin-left: 0;
+  /* 1600 px*/
+  /* 767 px*/
+}
+@media (max-width: 1400px) {
+  /* line 29, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-indicators {
+    bottom: -30%;
+  }
+}
+@media (max-width: 767px) {
+  /* line 29, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-indicators {
+    bottom: -30px;
+    margin: 0;
+  }
+}
+/* line 42, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.home-container #homeSlider .carousel-indicators li {
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  opacity: 1;
+  border: none;
+  margin-right: 14px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
+  /* 1600 px*/
+  /* 1600 px*/
+}
+@media (max-width: 1600px) {
+  /* line 42, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-indicators li {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 42, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+  }
+}
+/* line 58, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.home-container #homeSlider .carousel-indicators li:last-child {
+  margin-right: 0;
+}
+/* line 61, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.home-container #homeSlider .carousel-indicators li.active {
+  border: none;
+  background-color: #f37321;
+}
+/* line 68, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.home-container #homeSlider .carousel-inner .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+}
+/* line 71, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.home-container #homeSlider .carousel-inner .carousel-item.active {
+  opacity: 1;
+}
+/* line 74, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.home-container #homeSlider .carousel-inner .carousel-item h2 {
+  color: #f37321;
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.16);
+  /* 1600 px*/
+  /* 1600 px*/
+  /* 1280 px*/
+  /* 1199 px*/
+  /* 991 px*/
+}
+@media (max-width: 1600px) {
+  /* line 74, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-inner .carousel-item h2 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 74, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-inner .carousel-item h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 1280px) {
+  /* line 74, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-inner .carousel-item h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 74, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-inner .carousel-item h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 74, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-inner .carousel-item h2 {
+    font-size: 25px;
+  }
+}
+/* line 96, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.home-container #homeSlider .carousel-inner .carousel-item p {
+  color: white;
+  font-size: 24px;
+  /* 1600 px*/
+  /* 1600 px*/
+  /* 1199 px*/
+  /* 991 px*/
+}
+@media (max-width: 1600px) {
+  /* line 96, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-inner .carousel-item p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 96, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-inner .carousel-item p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 96, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-inner .carousel-item p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 96, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .home-container #homeSlider .carousel-inner .carousel-item p {
+    font-size: 16px;
+  }
+}
+
+/* line 117, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container {
+  position: relative;
+  z-index: 1;
+  margin-top: -86px;
+  /* 1600 px*/
+  /* 1199 px*/
+  /* 767 px*/
+  /* 480 px*/
+}
+@media (max-width: 1400px) {
+  /* line 117, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container {
+    margin-top: -66px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 117, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 117, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 117, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container {
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* line 136, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent {
+  -webkit-box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+}
+/* line 138, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent .vsConsultingBlocks {
+  width: calc(100% / 2);
+  background-color: white;
+  /* 991 px*/
+  /* 480 px*/
+}
+@media (max-width: 991px) {
+  /* line 138, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container .vsConsultingContent .vsConsultingBlocks {
+    width: calc(100% / 1);
+  }
+}
+@media (max-width: 480px) {
+  /* line 138, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container .vsConsultingContent .vsConsultingBlocks {
+    padding: 15px !important;
+  }
+}
+/* line 147, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange {
+  background-color: #f37321;
+}
+/* line 149, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange h2 {
+  font-size: 35px;
+  color: white;
+  /* 1600 px*/
+  /* 1199 px*/
+  /* 480 px*/
+}
+@media (max-width: 1400px) {
+  /* line 149, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 149, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 149, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange h2 {
+    font-size: 20px;
+  }
+}
+/* line 162, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange p {
+  color: white;
+}
+/* line 165, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange .blackBtn {
+  margin: 10px 0;
+  background-color: #4B4B4B;
+  border-color: #4B4B4B;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  min-width: auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  /* 1600 px*/
+  /* 1600 px*/
+}
+/* line 174, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange .blackBtn:hover, .vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange .blackBtn:focus, .vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange .blackBtn:active {
+  background-color: #373737;
+  border-color: #373737;
+}
+@media (max-width: 1600px) {
+  /* line 165, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange .blackBtn {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 165, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container .vsConsultingContent .vsConsultingBlocks.bg-orange .blackBtn {
+    font-size: 16px;
+  }
+}
+/* line 186, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent .vsConsultingBlocks img {
+  width: 100%;
+}
+/* line 189, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent .vsConsultingBlocks h2 {
+  font-size: 30px;
+  color: #373737;
+  margin-bottom: 20px;
+  /* 1600 px*/
+  /* 1600 px*/
+  /* 480 px*/
+}
+@media (max-width: 1600px) {
+  /* line 189, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container .vsConsultingContent .vsConsultingBlocks h2 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 189, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container .vsConsultingContent .vsConsultingBlocks h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 189, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .vsConsulting-container .vsConsultingContent .vsConsultingBlocks h2 {
+    font-size: 20px;
+  }
+}
+/* line 203, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent .vsConsultingBlocks p {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+/* line 207, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.vsConsulting-container .vsConsultingContent .vsConsultingBlocks p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 217, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.pageHeading .headingLine {
+  width: 111px;
+  height: 5px;
+  display: inline-block;
+  /* 1600 px*/
+  /* 767 px*/
+}
+@media (max-width: 1400px) {
+  /* line 217, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .pageHeading .headingLine {
+    width: 100px;
+    height: 4px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 217, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .pageHeading .headingLine {
+    width: 90px;
+    height: 3px;
+  }
+}
+/* line 229, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.pageHeading .headingLine.blue {
+  background-color: #f37321;
+}
+/* line 232, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.pageHeading .headingLine.light-blue {
+  background-color: #26BCE4;
+}
+/* line 236, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.pageHeading h3 {
+  font-size: 36px;
+  color: #373737;
+  font-weight: 500;
+  /* 1600 px*/
+  /* 767 px*/
+  /* 480 px*/
+}
+@media (max-width: 1400px) {
+  /* line 236, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .pageHeading h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 236, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .pageHeading h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 236, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .pageHeading h3 {
+    font-size: 23px;
+  }
+}
+/* line 250, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.pageHeading h2 {
+  font-size: 20px;
+  color: #373737;
+  font-weight: 500;
+  /* 1600 px*/
+  /* 767 px*/
+  /* 480 px*/
+}
+@media (max-width: 1400px) {
+  /* line 250, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .pageHeading h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 250, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .pageHeading h2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 250, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .pageHeading h2 {
+    font-size: 15px;
+  }
+}
+
+/*****  our-services button  *****/
+/* line 268, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.services-container {
+  padding-bottom: 50px;
+  background: #848484;
+  background: linear-gradient(180deg, #f3f7fa 0%, #f3f7fa 8%, #ffffff 8%, #ffffff 100%);
+  /* 1199 px*/
+  /* 480 px*/
+}
+@media (max-width: 1199px) {
+  /* line 268, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .services-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 268, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .services-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+}
+/* line 281, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.services-container .about-us-box {
+  order: 1 !important;
+}
+/* line 284, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.services-container .our-services-content {
+  order: 2 !important;
+}
+
+/* line 289, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.our_service_block {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  /* 991 px*/
+}
+/* line 293, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.our_service_block:last-child {
+  margin-bottom: 0px;
+}
+/* line 296, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.our_service_block.shadow-lg {
+  box-shadow: 0 11px 15px rgba(0, 0, 0, 0.16) !important;
+}
+@media (max-width: 991px) {
+  /* line 289, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .our_service_block {
+    flex-direction: column;
+  }
+}
+/* line 302, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.our_service_block .our_service_blockContent {
+  /* 991 px*/
+}
+@media (max-width: 991px) {
+  /* line 302, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .our_service_block .our_service_blockContent {
+    width: 100% !important;
+    order: 2;
+  }
+}
+/* line 307, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.our_service_block .our_service_blockContent h2 {
+  color: #f37321;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  /* 1600 px*/
+  /* 767 px*/
+}
+@media (max-width: 1400px) {
+  /* line 307, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .our_service_block .our_service_blockContent h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 316, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .our_service_block .our_service_blockContent h2 br {
+    display: none;
+  }
+}
+/* line 321, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.our_service_block .our_service_blockContent p {
+  font-size: 14px;
+  /* 1600 px*/
+}
+@media (max-width: 1400px) {
+  /* line 321, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .our_service_block .our_service_blockContent p {
+    font-size: 14px;
+  }
+}
+/* line 328, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.our_service_block .our_service_blockImg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* 991 px*/
+  /* 767 px*/
+  /* 480 px*/
+}
+@media (max-width: 991px) {
+  /* line 328, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .our_service_block .our_service_blockImg {
+    height: 400px;
+    width: 100% !important;
+    order: 1;
+  }
+}
+@media (max-width: 767px) {
+  /* line 328, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .our_service_block .our_service_blockImg {
+    height: 350px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 328, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .our_service_block .our_service_blockImg {
+    height: 200px;
+  }
+}
+
+/* line 346, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.listpoints li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+}
+/* line 350, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.listpoints li:last-child {
+  margin-bottom: 0px;
+}
+/* line 353, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.listpoints li::before {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 6px;
+  top: 7px;
+  left: 0;
+  background-color: #373737;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  border-radius: 100px;
+}
+
+/* newTechIdeas-container */
+/* line 367, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.newTechIdeas-container {
+  /* 1199 px*/
+  /* 480 px*/
+}
+@media (max-width: 1199px) {
+  /* line 367, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 367, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* line 376, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.newTechIdeas-container .newTechHeading {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: -33px !important;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.38);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.38);
+  /* 1600 px*/
+  /* 1600 px*/
+  /* 1280 px*/
+  /* 1199 px*/
+  /* 991 px*/
+  /* 480 px*/
+}
+@media (max-width: 1600px) {
+  /* line 376, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechHeading {
+    font-size: 23px;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 376, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechHeading {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1280px) {
+  /* line 376, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechHeading {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  /* line 376, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechHeading {
+    font-size: 18px;
+  }
+}
+@media (max-width: 991px) {
+  /* line 376, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechHeading {
+    width: 100% !important;
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 376, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechHeading {
+    margin-top: 0px !important;
+    font-size: 16px;
+  }
+}
+/* line 404, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock {
+  padding-right: 40px;
+  border-right: solid 2px #C6C6C6;
+  /* 991 px*/
+}
+@media (max-width: 991px) {
+  /* line 404, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock {
+    width: 100% !important;
+    padding-right: 0px;
+    border-right: none;
+  }
+}
+/* line 412, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock:last-child {
+  padding-right: 0px;
+  border-right: none;
+  padding-left: 40px;
+  /* 991 px*/
+}
+@media (max-width: 991px) {
+  /* line 412, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock:last-child {
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+}
+/* line 422, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock .newTechIdeaBlock h3 {
+  color: #f37321;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  /* 480 px*/
+}
+@media (max-width: 480px) {
+  /* line 422, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock .newTechIdeaBlock h3 {
+    font-size: 15px;
+  }
+}
+/* line 431, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock .newTechIdeaBlock h2 {
+  color: #333333;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  /* 1600 px*/
+  /* 480 px*/
+}
+@media (max-width: 1400px) {
+  /* line 431, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock .newTechIdeaBlock h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 431, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock .newTechIdeaBlock h2 {
+    font-size: 18px;
+  }
+}
+/* line 443, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock .newTechIdeaBlock .btn {
+  font-weight: 500;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+/* line 447, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock .newTechIdeaBlock p {
+  margin-bottom: 10px;
+}
+/* line 449, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.newTechIdeas-container .newTechIdeasContent .newTechIdeasContentBlock .newTechIdeaBlock p:last-child {
+  margin-bottom: 0px;
+}
+
+/***** contact content *****/
+/* line 459, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container {
+  background: #848484;
+  background: linear-gradient(180deg, #848484 0%, #848484 66%, #ffffff 66%, #ffffff 100%);
+  /* 1199 px*/
+  /* 480 px*/
+}
+@media (max-width: 1199px) {
+  /* line 459, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contact-container {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 459, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contact-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* line 470, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container .bg-light-grey {
+  background-color: rgba(249, 249, 249, 0.929);
+}
+/* line 473, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container .contactFormOuter {
+  /* 991 px*/
+}
+@media (max-width: 991px) {
+  /* line 473, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contact-container .contactFormOuter {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+/* line 479, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container .contact_form {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+}
+/* line 481, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container .contact_form .form-group {
+  margin-bottom: 20px;
+}
+/* line 483, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container .contact_form .form-group .form-control {
+  min-height: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #373737;
+  padding-left: 20px;
+  padding-right: 20px;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  /* 1600 px*/
+  /* 1600 px*/
+}
+/* line 15, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.contact-container .contact_form .form-group .form-control ::-webkit-input-placeholder {
+  color: #373737;
+  opacity: 1;
+}
+/* line 16, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.contact-container .contact_form .form-group .form-control ::-moz-placeholder {
+  color: #373737;
+  opacity: 1;
+}
+/* line 17, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.contact-container .contact_form .form-group .form-control :-moz-placeholder {
+  color: #373737;
+  opacity: 1;
+}
+/* line 18, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/base/_mixins.scss */
+.contact-container .contact_form .form-group .form-control :-ms-input-placeholder {
+  color: #373737;
+  opacity: 1;
+}
+@media (max-width: 1600px) {
+  /* line 483, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contact-container .contact_form .form-group .form-control {
+    min-height: 55px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 1400px) {
+  /* line 483, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contact-container .contact_form .form-group .form-control {
+    min-height: 50px;
+    font-size: 16px;
+  }
+}
+/* line 503, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container .contact_form .form-group .form-control:hover, .contact-container .contact_form .form-group .form-control:focus, .contact-container .contact_form .form-group .form-control:active {
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  -webkit-box-shadow: 0 0 9px rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 9px rgba(0, 123, 255, 0.25);
+}
+/* line 507, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container .contact_form .form-group .form-control.textarea {
+  resize: none;
+}
+/* line 512, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container .contact_form .col {
+  /* 480 px*/
+}
+@media (max-width: 480px) {
+  /* line 512, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contact-container .contact_form .col {
+    flex-basis: 100%;
+  }
+}
+/* line 516, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container .contact_form .col.d-flex {
+  /* 767 px*/
+}
+@media (max-width: 767px) {
+  /* line 516, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contact-container .contact_form .col.d-flex {
+    flex-direction: column;
+  }
+  /* line 519, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contact-container .contact_form .col.d-flex p {
+    margin-top: 20px;
+    padding-left: 0px !important;
+    text-align: center;
+  }
+}
+/* line 528, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contact-container .about-us-box-text {
+  /* 991 px*/
+}
+@media (max-width: 991px) {
+  /* line 528, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contact-container .about-us-box-text {
+    text-align: center;
+  }
+}
+
+/*****  back to top button  *****/
+/* line 536, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+#scrollTop {
+  background: #f37321;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  /* 991 px*/
+}
+@media (max-width: 991px) {
+  /* line 536, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  #scrollTop {
+    right: 20px;
+  }
+}
+/* line 551, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+#scrollTop:hover, #scrollTop:focus {
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  background-color: #373737;
+}
+/* line 555, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+#scrollTop i {
+  color: white;
+}
+
+/* line 560, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.about-us-container {
+  margin-top: -80px;
+  /* 1600 px*/
+}
+@media (max-width: 1400px) {
+  /* line 560, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .about-us-container {
+    margin-top: -60px;
+  }
+}
+/* line 565, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.about-us-container .about-us-box-text {
+  /* 991 px*/
+}
+@media (max-width: 991px) {
+  /* line 565, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .about-us-container .about-us-box-text {
+    margin: 0px !important;
+  }
+}
+/* line 570, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.about-us-container .mw-80 {
+  /* 991 px*/
+}
+@media (max-width: 991px) {
+  /* line 570, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .about-us-container .mw-80 {
+    padding: 0px !important;
+  }
+}
+
+/*****  about content  *****/
+/* line 578, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.about-us-container, .solutions-container, .staffing-container, .careers-container, .contact-container {
+  /* 991 px*/
+}
+@media (max-width: 991px) {
+  /* line 578, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .about-us-container, .solutions-container, .staffing-container, .careers-container, .contact-container {
+    flex-direction: column;
+  }
+}
+
+/* line 585, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.core-values-container, .our-services-container, .our-solutions-container, .solution-capabilities-values-container {
+  /* 480 px*/
+}
+@media (max-width: 480px) {
+  /* line 585, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .core-values-container, .our-services-container, .our-solutions-container, .solution-capabilities-values-container {
+    padding: 20px !important;
+  }
+}
+
+/* line 590, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.about-us-box {
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 991 px*/
+  /* 480 px*/
+}
+@media (max-width: 991px) {
+  /* line 590, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .about-us-box {
+    width: 100% !important;
+    order: 2;
+  }
+}
+@media (max-width: 480px) {
+  /* line 590, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .about-us-box {
+    padding: 20px !important;
+  }
+}
+/* line 600, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.about-us-box.imgDiv {
+  /* 991 px*/
+  /* 480 px*/
+}
+@media (max-width: 991px) {
+  /* line 600, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .about-us-box.imgDiv {
+    order: 1;
+    min-height: 600px;
+    background-position: center;
+    background-size: cover;
+  }
+}
+@media (max-width: 480px) {
+  /* line 600, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .about-us-box.imgDiv {
+    min-height: 300px;
+  }
+}
+
+/* line 613, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.serviceList {
+  margin: 20px 0 0;
+}
+/* line 615, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.serviceList h3 {
+  font-size: 18px;
+  color: #373737;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+/* line 622, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.serviceList ul li {
+  font-size: 14px;
+  color: #373737;
+  font-weight: 400;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  white-space: normal;
+  word-break: break-word;
+  /* 1600 px*/
+  /* 767 px*/
+}
+/* line 631, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.serviceList ul li:last-child {
+  margin-bottom: 0px;
+}
+@media (max-width: 1400px) {
+  /* line 622, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .serviceList ul li {
+    font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 622, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .serviceList ul li {
+    font-size: 14px;
+  }
+}
+/* line 640, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.serviceList ul li::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 0;
+  background-color: #f37321;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  width: 8px;
+  height: 8px;
+}
+
+/* line 654, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.careerContent {
+  margin-bottom: 20px;
+}
+/* line 656, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.careerContent:last-child {
+  margin-bottom: 0;
+}
+/* line 659, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.careerContent h2 {
+  font-size: 20px;
+  color: #f37321;
+  font-weight: 600;
+  margin-bottom: 10px;
+  /* 1600 px*/
+  /* 767 px*/
+}
+@media (max-width: 1400px) {
+  /* line 659, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .careerContent h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 659, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .careerContent h2 {
+    font-size: 16px;
+  }
+}
+
+/* line 673, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.sendcv {
+  color: #373737;
+  font-weight: 600;
+  font-size: 18px;
+  /* 1600 px*/
+}
+@media (max-width: 1400px) {
+  /* line 673, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .sendcv {
+    font-size: 16px;
+  }
+}
+/* line 680, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.sendcv:hover, .sendcv:focus, .sendcv:active {
+  color: #f37321;
+}
+
+/* line 685, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contactAddressSec {
+  /* 767 px*/
+}
+@media (max-width: 767px) {
+  /* line 685, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contactAddressSec {
+    flex-direction: column;
+  }
+}
+/* line 689, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contactAddressSec .contactAddress {
+  width: calc(100% / 3);
+  padding-right: 40px;
+  /* 767 px*/
+}
+@media (max-width: 767px) {
+  /* line 689, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contactAddressSec .contactAddress {
+    width: calc(100% / 1);
+    margin-bottom: 20px;
+  }
+}
+/* line 696, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contactAddressSec .contactAddress:first-child {
+  width: 50%;
+  /* 767 px*/
+}
+@media (max-width: 767px) {
+  /* line 696, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contactAddressSec .contactAddress:first-child {
+    width: 100%;
+  }
+}
+/* line 702, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contactAddressSec .contactAddress:last-child {
+  padding-right: 0px;
+  /* 767 px*/
+}
+@media (max-width: 767px) {
+  /* line 702, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+  .contactAddressSec .contactAddress:last-child {
+    margin-bottom: 0px;
+  }
+}
+/* line 709, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contactAddressSec .contactAddress a:hover, .contactAddressSec .contactAddress a:focus, .contactAddressSec .contactAddress a:active {
+  color: #f37321;
+}
+/* line 713, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contactAddressSec .contactAddress .contactIcon {
+  background-color: #f37321;
+  width: 38px;
+  height: 38px;
+}
+/* line 717, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contactAddressSec .contactAddress .contactIcon img {
+  width: 20px;
+}
+/* line 721, D:/Saroj/saroj's data/work/Shiva/VS Consulting/VS-Consulting/scss/module/_home.scss */
+.contactAddressSec .contactAddress .contactInfo {
+  width: calc(100% - 38px);
+}

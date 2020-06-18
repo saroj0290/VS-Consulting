@@ -1,0 +1,75 @@
+
+
+/* Fonts*/
+$baseFont: 'Montserrat', sans-serif;
+
+/* primary color */
+$baseColor:#F37321;
+
+/* base colors */
+$white:#ffffff;
+$black:#000000;
+$lightGrey:#D6D6D6;
+$mediumGrey:#707070;
+$darkGrey: #373737;
+$lightPink:#FFE3E3;
+
+/* background color */
+$bg-grey : #F3F7FA;
+
+
+/* font size */
+$font14 : 14px;
+$font15 : 15px;
+$font16 : 16px;
+$font17 : 17px;
+$font18 : 18px;
+$font20 : 20px;
+$font22 : 22px;
+$font23 : 23px;
+$font24 : 24px;
+$font25 : 25px;
+$font26 : 26px;
+$font27 : 27px;
+$font28 : 28px;
+$font25 : 25px;
+$font30 : 30px;
+$font35 : 35px;
+$font40 : 40px;
+$font45 : 45px;
+$font50 : 50px;
+$font60 : 60px;
+
+/* font weight */
+$fontLight : 300;
+$fontNormal : 400;
+$fontMedium : 500;
+$fontSemiBold : 600;
+$fontBold : 700;
+$fontExtraBold : 700;
+$fontBlack : 700;
+
+.bg-light-grey {
+    background-color: #F9F9F9;
+}
+.bg-orange {
+    background-color:$baseColor;
+}
+.bg-grey {
+    background-color: #F6F6F6;
+}
+.bg-darkGrey {
+    background-color: $darkGrey;
+}
+.bg-red {
+    background-color: $baseColor;
+}
+.bg-pink {
+    background-color: #FFBABA;
+}
+.bg-light-blue {
+    background-color: #DEF9F9;
+}
+.font-weight-semibold {
+    font-weight: $fontSemiBold !important;
+}

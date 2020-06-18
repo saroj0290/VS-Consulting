@@ -1,0 +1,725 @@
+/* Home slider */
+.home-container {
+    @include background-image('../images/sliderbg.png');
+    background-size: cover;
+    
+    @include breakpoint(xlarge) {
+        padding-left: 35px;
+        padding-right: 35px;
+        background-position: center;
+    }
+    @include breakpoint(medium) {
+        background-position: left 30% center;
+    }
+    @include breakpoint(small) {
+        padding:30px 30px 60px 30px;
+    }
+    
+    
+    #homeSlider {
+        margin-bottom: 100px;
+        @include breakpoint(xlarge) {
+            margin-bottom: 100px;
+        }
+        @include breakpoint(small) {
+            margin-bottom: 0px;
+            width: 100% !important;
+            padding-right:0px !important;
+        }
+        .carousel-indicators {
+            right: auto;
+            left:0;
+            bottom: -40%;
+            margin-right: 0;
+            margin-left: 0;
+            @include breakpoint(xxxlarge) {
+                bottom: -30%;
+            }
+            @include breakpoint(small) {
+                bottom: -30px;
+                margin: 0;
+            }
+            li {
+                width: 18px;
+                height: 18px;
+                background-color: $white;
+                opacity: 1;
+                border:none;
+                margin-right: 14px;
+                @include border-radius(100px);
+                @include breakpoint(xxxxlarge) {
+                    width: 16px;
+                    height: 16px;
+                }
+                @include breakpoint(xxxlarge) {
+                    width: 12px;
+                    height: 12px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                &.active {
+                    border:none;
+                    background-color: $baseColor;
+                }
+            }
+        }
+        .carousel-inner {
+            .carousel-item {
+                opacity: 0;
+                transition-property: opacity;
+                &.active {
+                    opacity: 1;
+                }
+                h2 {
+                    color: $baseColor;
+                    font-size: $font50;
+                    margin-bottom: 20px;
+                    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.16);
+                    @include breakpoint(xxxxlarge) {
+                        font-size: $font45;
+                    }
+                    @include breakpoint(xxxlarge) {
+                        font-size: $font40;
+                    }
+                    @include breakpoint(xxlarge) {
+                        font-size: $font35;
+                        margin-bottom: 10px;
+                    }
+                    @include breakpoint(xlarge) {
+                        font-size: $font30;
+                    }
+                    @include breakpoint(medium) {
+                        font-size: $font25;
+                    }
+                }
+                p {
+                    color: $white;
+                    font-size: $font24;
+                    @include breakpoint(xxxxlarge) {
+                        font-size: $font22;
+                    }
+                    @include breakpoint(xxxlarge) {
+                        font-size: $font20;
+                    }
+                    @include breakpoint(xlarge) {
+                        font-size: $font18;
+                    }
+                    @include breakpoint(medium) {
+                        font-size: $font16;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vsConsulting-container {    
+    position: relative;
+    z-index: 1;
+    margin-top: -86px;
+    @include breakpoint(xxxlarge) {
+        margin-top: -66px;
+    }
+    @include breakpoint(xlarge) {
+        padding-left:35px;
+        padding-right:35px;
+    }
+    @include breakpoint(small) {
+        margin-top: 40px;
+    }
+    @include breakpoint(x-small) {
+        margin-top: 20px;
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .vsConsultingContent  {
+        @include box-shadow(0px 3px 18px rgba(0,0,0,0.16));
+        .vsConsultingBlocks {
+            width:  calc(100% / 2);
+            background-color: $white;
+            @include breakpoint(medium) {
+                width:  calc(100% / 1);
+            }
+            @include breakpoint(x-small) {
+                padding:15px !important;
+            }
+            &.bg-orange {
+                background-color: $baseColor;
+                h2 {
+                    font-size:35px;
+                    color:$white;
+                    @include breakpoint(xxxlarge) {
+                        font-size:30px;
+                    }
+                    @include breakpoint(xlarge) {
+                        font-size:25px;
+                    }
+                    @include breakpoint(x-small) {
+                        font-size:20px;
+                    }
+                }
+                p {
+                    color:$white;
+                }
+                .blackBtn {
+                    margin: 10px 0;
+                    background-color: #4B4B4B;
+                    border-color: #4B4B4B;
+                    color: $white;
+                    font-size: $font18;
+                    font-weight:$fontMedium;
+                    min-width: auto;
+                    @include border-radius(5px);
+                    &:hover, &:focus, &:active {
+                        background-color: $darkGrey;
+                        border-color: $darkGrey;
+                    }
+                    @include breakpoint(xxxxlarge) {
+                        font-size: $font17;
+                    }
+                    @include breakpoint(xxxlarge) {
+                        font-size: $font16;
+                    }
+                }
+            }
+            img {
+                width: 100%;
+            }
+            h2 {
+                font-size: $font30;
+                color: $darkGrey;
+                margin-bottom: 20px;
+                @include breakpoint(xxxxlarge) {
+                    font-size: $font26;
+                }
+                @include breakpoint(xxxlarge) {
+                    font-size: $font24;
+                }
+                @include breakpoint(x-small) {
+                    font-size:20px;
+                }
+            }
+            p {
+                color:$black;
+                font-size: $font14;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.pageHeading {
+    .headingLine {
+        width: 111px;
+        height: 5px;
+        display: inline-block;
+        @include breakpoint(xxxlarge) {
+            width: 100px;
+            height: 4px;
+        }
+        @include breakpoint(small) {
+            width: 90px;
+            height: 3px;
+        }
+        &.blue {
+            background-color: $baseColor;
+        }
+        &.light-blue {
+            background-color: #26BCE4;
+        }
+    } 
+    h3 {
+        font-size: 36px;
+        color: $darkGrey;
+        font-weight: $fontMedium;
+        @include breakpoint(xxxlarge) {
+            font-size: 30px;
+        }
+        @include breakpoint(small) {
+            font-size: 25px;
+        }
+        @include breakpoint(x-small) {
+            font-size: 23px;
+        }
+    } 
+    h2 {
+        font-size: 20px;
+        color: $darkGrey;
+        font-weight: $fontMedium;
+        @include breakpoint(xxxlarge) {
+            font-size: 18px;
+        }
+        @include breakpoint(small) {
+            font-size: 16px;
+        }
+        @include breakpoint(x-small) {
+            font-size: 15px;
+        }
+    }    
+}
+
+
+/*****  our-services button  *****/
+.services-container  {
+    padding-bottom: 50px;    
+    background: rgb(132,132,132);
+    background: linear-gradient(180deg, #F3F7FA 0%, #F3F7FA 8%, #ffffff 8%, #ffffff 100%);
+    @include breakpoint(xlarge) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include breakpoint(x-small) {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+    }
+    .about-us-box {
+        order: 1 !important;
+    }
+    .our-services-content {
+        order: 2 !important;
+    }
+}
+
+.our_service_block {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    &:last-child {
+        margin-bottom: 0px;
+    }
+    &.shadow-lg {
+        box-shadow: 0 11px 15px rgba(0, 0, 0, 0.16) !important;
+    }
+    @include breakpoint(medium) {
+        flex-direction: column;
+    }
+    .our_service_blockContent {
+        @include breakpoint(medium) {
+            width:100% !important;
+            order:2;
+        }
+        h2 {
+            color: $baseColor;
+            font-size: $font25;
+            font-weight: $fontSemiBold;
+            margin-bottom: 15px;
+            @include breakpoint(xxxlarge) {
+                font-size: $font20;
+            }
+            @include breakpoint(small) {
+                br {
+                    display: none;
+                }
+            }
+        }
+        p {
+            font-size: $font14;
+            @include breakpoint(xxxlarge) {
+                font-size: $font14;
+            }
+        }
+    }
+    .our_service_blockImg {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include breakpoint(medium) {
+            height: 400px;
+            width: 100% !important;
+            order:1;
+        }
+        @include breakpoint(small) {
+            height: 350px;
+        }
+        @include breakpoint(x-small) {
+            height: 200px;
+        }
+    }
+}
+.listpoints {
+    li {
+        margin-bottom: 10px;
+        padding-left: 15px;
+        position: relative;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            width: 6px;
+            height: 6px;
+            top: 7px;
+            left: 0;
+            background-color: $darkGrey;
+            @include border-radius(100px);
+        }
+    }
+}
+
+/* newTechIdeas-container */
+.newTechIdeas-container {
+    @include breakpoint(xlarge) {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    @include breakpoint(x-small) {
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .newTechHeading {
+        font-size: $font25;
+        font-weight: $fontMedium;
+        margin-top: -33px !important;
+        @include border-radius(20px);
+        @include box-shadow(0px 6px 20px rgba(0,0,0,.38));
+        @include breakpoint(xxxxlarge) {
+            font-size: $font23;            
+        }
+        @include breakpoint(xxxlarge) {
+            font-size: $font22;            
+        }
+        @include breakpoint(xxlarge) {
+            font-size: $font20;            
+        }
+        @include breakpoint(xlarge) {
+            font-size: $font18;            
+        }
+        @include breakpoint(medium) {
+            width:100% !important;
+            font-size: $font20;          
+        }
+        @include breakpoint(x-small) {
+            margin-top: 0px !important;
+            font-size: $font16;    
+        }
+    }
+    .newTechIdeasContent {
+        .newTechIdeasContentBlock {
+            padding-right: 40px;
+            border-right: solid 2px #C6C6C6;
+            @include breakpoint(medium) {
+                width: 100% !important;
+                padding-right: 0px;
+                border-right: none;
+            }
+            &:last-child {
+                padding-right: 0px;
+                border-right:none;
+                padding-left: 40px;
+                @include breakpoint(medium) {
+                    padding-left: 0px;
+                    margin-top: 20px;
+                }
+            }
+            .newTechIdeaBlock {
+                h3 {
+                    color: $baseColor;
+                    font-size: $font16;
+                    font-weight: $fontSemiBold;
+                    margin-bottom: 10px;
+                    @include breakpoint(x-small) {
+                        font-size: $font15;
+                    }
+                }
+                h2 {
+                    color: #333333;
+                    font-size: $font26;
+                    font-weight: $fontSemiBold;
+                    margin-bottom: 20px;
+                    @include breakpoint(xxxlarge) {
+                        font-size: $font24;
+                    }
+                    @include breakpoint(x-small) {
+                        font-size: $font18;
+                    }
+                }
+                .btn {
+                    font-weight: $fontMedium;
+                    @include box-shadow(0px 3px 6px rgba(0,0,0,.16));
+                }
+                p {
+                    margin-bottom: 10px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/***** contact content *****/
+.contact-container {
+    background: rgb(132,132,132);
+    background: linear-gradient(180deg, rgba(132,132,132,1) 0%, rgba(132,132,132,1) 66%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 100%);
+    @include breakpoint(xlarge) {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    @include breakpoint(x-small) {
+        padding-left:15px;
+        padding-right:15px;
+    }
+    .bg-light-grey {
+        background-color: rgba(249, 249, 249, 0.929);
+    }
+    .contactFormOuter {
+        @include breakpoint(medium) {
+            padding-left:0px !important;
+            padding-right:0px !important;
+        }
+    }
+    .contact_form {
+        @include border-radius(20px);
+        .form-group {
+            margin-bottom: 20px;
+            .form-control {
+                min-height: 60px;
+                font-size: $font18;
+                font-weight: $fontMedium;
+                color: $darkGrey;
+                padding-left: 20px;
+                padding-right: 20px;
+                @include transition(all ease 0.5s);
+                @include placeholder {
+                    color: $darkGrey;
+                    opacity: 1;
+                }
+                @include breakpoint(xxxxlarge) {
+                    min-height: 55px;
+                    font-size: $font17;
+                }
+                @include breakpoint(xxxlarge) {
+                    min-height: 50px;
+                    font-size: $font16;
+                }
+                &:hover, &:focus, &:active {
+                    @include transition(all ease 0.5s);
+                    @include box-shadow(0 0 9px rgba(0,123,255,.25));
+                }
+                &.textarea {
+                    resize: none;
+                }
+            }
+        }
+        .col {
+            @include breakpoint(x-small) {
+                flex-basis: 100%;
+            }
+            &.d-flex {
+                @include breakpoint(small) {
+                    flex-direction: column;
+                    p {
+                        margin-top: 20px;
+                        padding-left: 0px !important;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .about-us-box-text {
+        @include breakpoint(medium) {
+            text-align: center;
+        }
+    }
+}
+
+/*****  back to top button  *****/
+#scrollTop {
+    background: $baseColor;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    justify-content: center;
+    align-items: center;
+    @include border-radius(5px);
+    @include transition(all ease 0.5s);
+    @include breakpoint(medium) {
+        right: 20px;
+    }
+    &:hover, &:focus {
+        @include transition(all ease 0.5s);
+        background-color: $darkGrey;
+    }
+    i {
+        color: $white;
+    }
+}
+
+.about-us-container {
+    margin-top: -80px;
+    @include breakpoint(xxxlarge) {
+        margin-top: -60px;
+    }
+    .about-us-box-text {
+        @include breakpoint(medium) {
+            margin: 0px !important;
+        }
+    }
+    .mw-80 {
+        @include breakpoint(medium) {
+            padding: 0px !important;
+        }
+    }
+}
+
+/*****  about content  *****/
+.about-us-container, .solutions-container, .staffing-container, .careers-container, .contact-container {
+    
+    @include breakpoint(medium) {
+        flex-direction: column;
+    }
+}
+
+.core-values-container, .our-services-container, .our-solutions-container, .solution-capabilities-values-container { 
+    @include breakpoint(x-small) {
+        padding: 20px !important;
+    }
+}
+.about-us-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include breakpoint(medium) {
+        width: 100% !important;
+        order: 2;
+    }    
+    @include breakpoint(x-small) {
+        padding: 20px !important;
+    }
+    &.imgDiv {
+        @include breakpoint(medium) {
+            order: 1;
+            min-height: 600px;
+            background-position: center;
+            background-size: cover;
+        }
+        @include breakpoint(x-small) {
+            min-height: 300px;
+        }
+    }
+}
+
+.serviceList {
+    margin: 20px 0 0;
+    h3 {
+        font-size: $font18;
+        color: $darkGrey;
+        font-weight: $fontSemiBold;
+        margin-bottom: 10px;
+    }
+    ul {
+        li {
+            font-size: $font14;
+            color: $darkGrey;
+            font-weight: $fontNormal;
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            white-space: normal;
+            word-break: break-word;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            @include breakpoint(xxxlarge) {
+                font-size: $font14;
+            }
+            @include breakpoint(small) {
+                font-size: $font14;
+            }
+            &::before {
+                content:'';
+                position: absolute;
+                top: 6px;
+                left: 0;
+                background-color: $baseColor;
+                @include border-radius(10px);
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+}
+
+.careerContent {
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: $font20;
+        color: $baseColor;
+        font-weight: $fontSemiBold;
+        margin-bottom: 10px;
+        @include breakpoint(xxxlarge) {
+            font-size: $font18;
+        }
+        @include breakpoint(small) {
+            font-size: $font16;
+        }
+    }
+}
+
+.sendcv {
+    color: $darkGrey;
+    font-weight: $fontSemiBold;
+    font-size: $font18;
+    @include breakpoint(xxxlarge) {
+        font-size: $font16;
+    }
+    &:hover, &:focus, &:active {
+        color: $baseColor;
+    }
+}
+
+.contactAddressSec {
+    @include breakpoint(small) {
+        flex-direction: column;
+    }
+    .contactAddress {
+        width:calc(100% / 3);  
+        padding-right: 40px;
+        @include breakpoint(small) {
+            width:calc(100% / 1); 
+            margin-bottom: 20px; 
+        }
+        &:first-child {
+            width: 50%;
+            @include breakpoint(small) {
+                width:100%;  
+            }
+        }
+        &:last-child {
+            padding-right: 0px;
+            @include breakpoint(small) {
+                margin-bottom: 0px; 
+            }
+        }
+        a {
+            &:hover, &:focus, &:active {
+                color: $baseColor;
+            }
+        }
+        .contactIcon {
+            background-color: $baseColor;
+            width:38px;
+            height: 38px;
+            img {
+                width:20px;
+            }
+        }
+        .contactInfo {
+            width: calc(100% - 38px);
+        }
+    }
+}

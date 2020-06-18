@@ -1,0 +1,549 @@
+html {
+    position: relative;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $white;
+    font-family: $baseFont;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: 0px;
+    outline-offset: -2px;
+}
+
+a {
+    outline: none;
+    border: 0px;
+    text-decoration: none;
+    @include transition(all ease 0.6s);
+
+    &:hover,
+    &:active,
+    &:focus {
+        @include transition(all ease 0.6s);
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.no-Padd {
+    padding: 0 !important;
+}
+
+.no-Marg {
+    margin: 0 !important;
+}
+
+input,
+a,
+button,
+.btn,
+textarea {
+    &:focus {
+        outline: none !important;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Container style */
+.container {
+    max-width: 90%;
+    margin: 0px auto;
+
+    @include breakpoint(xxlarge) {
+        max-width: 100%;
+    }
+}
+.h-100vh {
+    min-height: 70vh;
+    @include breakpoint(xlarge) {
+        height: 100%;
+    }
+}
+
+/* button */
+.btn {
+    color: $darkGrey;
+    background-color: $white;
+    border: solid 2px $white;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: $font18;
+    font-weight: $fontMedium;
+    display: inline-block;
+    @include box-shadow(0px 3px 6px rgba(0,0,0,.16));
+    @include transition(all ease 0.5s);
+    @include border-radius(5px);
+
+    @include breakpoint(xxxxlarge) {
+        font-size: $font16;
+    }
+
+    @include breakpoint(xxxlarge) {
+        padding: 10px 20px;
+    }
+
+
+    &:hover,
+    &:focus,
+    &:active {
+        @include transition(all ease 0.5s);
+        background-color: $baseColor;
+        border-color: $baseColor;
+        color: $white;
+    }
+
+    &.orange_btn {
+        color: $white;
+        background-color: $baseColor;
+        border-color: $baseColor;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $white;
+            border-color: $baseColor;
+            color: $baseColor;
+        }
+    }
+    &.red_border_btn {
+        color: $baseColor;
+        background-color: $white;
+        border-color: $baseColor;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $baseColor !important;
+            border-color: $baseColor;
+            color: $white !important;
+        }
+    }
+}
+
+/* Common top bottom padding */
+.comnTBpadd {
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+    @include breakpoint(xxxxlarge) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @include breakpoint(xxxlarge) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @include breakpoint(small) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include breakpoint(x-small) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.comnLRpadd {
+    padding-left: 140px;
+    padding-right: 140px;
+
+    @include breakpoint(xxxxlarge) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @include breakpoint(xxxlarge) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+.comnpara {
+    font-size: $font14;
+    color: $darkGrey;
+    font-weight: $fontNormal;
+    @include breakpoint(xxxlarge) {
+        font-size: $font14;
+    }
+    @include breakpoint(small) {
+        font-size: $font14;
+    }
+
+    &.light {
+        font-weight: $fontLight;
+    }
+
+    &.regular {
+        font-weight: $fontNormal;
+    }
+
+    &.semiBold {
+        font-weight: $fontSemiBold;
+    }
+
+    &.bold {
+        font-weight: $fontBold;
+    }
+}
+
+.fixedWidth {
+    max-width: 86%;
+    width: 100%;
+    margin: 0px auto;
+    @include breakpoint(xxlarge) {
+        max-width: 90%;
+    }
+    @include breakpoint(xlarge) {
+        max-width: 100%;
+    }
+    
+}
+.mw-80 {
+    max-width: 80%;
+    width: 100%;
+    margin: 0px auto;
+    @include breakpoint(xxxlarge) {
+        max-width: 85%;
+    }
+    @include breakpoint(xxlarge) {
+        max-width: 100%;
+    }
+}
+
+// Input hover style
+.effect-1 {
+    border: 0;
+    padding: 7px 0;
+    border-bottom: 2px solid $lightGrey;
+}
+
+.effect-1~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $darkGrey;
+    transition: 0.4s;
+}
+
+.effect-1:focus~.focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.effect-16 {
+    border: 0;
+    padding: 4px 0;
+    border-bottom: 1px solid $lightGrey;
+    background-color: transparent;
+}
+
+.effect-16~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $darkGrey;
+    transition: 0.4s;
+}
+
+.effect-16:focus~.focus-border,
+.has-content.effect-16~.focus-border {
+    width: 100%;
+    transition: 0.4s;
+}
+
+.effect-16~label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+}
+
+.effect-16:focus~label,
+.has-content.effect-16~label {
+    top: -26px;
+    color: $darkGrey !important;
+    transition: 0.3s;
+    @include breakpoint(x-small) {
+        top: -20px;
+    }
+}
+
+
+
+/* check box style */
+.my-check {
+    display: inline-block;
+    padding-left: 30px;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.checkBox {
+    display: block;
+    float: left;
+    height: 18px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    transform: none;
+    width: 19px;
+    
+}
+.checkBox > label{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    cursor: pointer;
+    float: left;
+    height: 100%;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    z-index: 9;    
+}
+.checkBox input[type="checkbox"] {
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0;
+    position: absolute !important;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.checkBox input[type="checkbox"]:hover + label, .checkBox input[type="checkbox"]:active + label {
+    border-color: $darkGrey;
+}
+.checkBox input[type="checkbox"]:checked + label::after {
+    border-color: $darkGrey;
+    opacity: 1;    
+}
+.checkBox input[type="checkbox"]:checked + label {
+    border-color: $darkGrey;
+}
+.checkBox label::after {
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    content: "";
+    height: 6px;
+    left: 4px;
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    transform: rotate(-45deg) !important;
+    width: 10px;    
+}
+.lablel {
+    color: $darkGrey !important;
+    float: left;
+    font-size: 15px;
+    font-weight: 400 !important;
+    line-height: 20px;
+    white-space: normal;
+    margin: 0;
+    margin-top: -3px;
+}
+a:hover, a:focus, a:active{
+    color:$darkGrey;        
+} 
+/* check box style end */
+
+/* Radio box style */
+.my-radio {
+    display: inline-block;
+    float: none;
+    padding-left: 25px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: auto;
+    cursor: pointer;
+    @media (max-width: 375px) {     
+        padding-left: 25px;
+    }
+    & > label {
+        color: #888888;
+        float: left;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        white-space: normal;
+        margin: 0;
+        cursor: pointer;
+    }
+}
+.radioBox {
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    width: 18px;  
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+    input[type="radio"] {
+        cursor: pointer;
+        height: 100% !important;
+        left: 0;
+        margin: 0;
+        opacity: 0;
+        position: absolute !important;;
+        top: 0;
+        width: 100% !important;
+        z-index: 10;
+    }
+    & > label {
+        background: #fff;
+        border: 1px solid $darkGrey;
+        border-radius: 100px;
+        cursor: pointer;
+        float: left;
+        height: 100%;
+        margin: 0;
+        position: relative;
+        width: 100%;
+        z-index: 9;
+        &:after {
+            content: "";
+            background-color: $baseColor;
+            border-radius: 100px;
+            height: 12px;
+            width: 12px;
+            left: 2px;
+            opacity: 0;
+            position: absolute;
+            top: 2px;
+            transform: rotate(-45deg) !important;
+        }  
+    }
+    input[type="radio"]:hover + label, input[type="radio"]:active + label {
+        border-color: $baseColor;
+    }
+    //input[type="radio"]:checked + label {
+        // border-color: $darkGrey;
+    //}
+    input[type="radio"]:checked + label::after {
+        border-color: $baseColor;
+        opacity: 1;    
+    }    
+}
+.my-radio, .my-check {
+    &.checked {
+        .label, & > label {
+            color: $darkGrey;
+        }
+    }
+}
+/* Radio box style end */
+
+
+/* Custom Pagination */
+.customPagination {
+    @include border-radius(10px);
+    padding: 20px;
+    text-align: center;
+    nav {
+        .pagination {
+            justify-content: center;
+            .page-item {
+                margin-right: 15px;
+                &:last-child {
+                    margin-right: 0px;
+                    .page-link {
+                        background-color: $white;
+                        border-color: $baseColor;
+                        color: $baseColor;
+                    }
+                }
+                &.disabled {
+                    .page-link {
+                        border-color: $lightGrey;
+                        background-color: $white;
+                        color: $lightGrey;
+                        cursor: not-allowed;
+                    }
+                }
+                &.morepages {
+                    .page-link {
+                        &:hover, &:focus, &:active, &.active {
+                            color: $baseColor;
+                            cursor: initial;
+                        }
+                    }
+                }
+                .page-link {
+                    font-weight: $fontSemiBold;
+                    font-size: $font20;
+                    background-color: $white;
+                    border-color:$white;
+                    color: $baseColor;
+                    @include border-radius(3px);
+                    &:hover, &:focus, &:active, &.active {
+                        background-color: $baseColor;
+                        border-color: $baseColor;
+                        color: $white;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    span {
+                        font-size: 30px;
+                        font-weight: 300;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2825)!important;
+}
