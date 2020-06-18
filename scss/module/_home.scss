@@ -263,8 +263,19 @@
     }    
 }
 
+/*****  staffing  *****/
+.staffing-container  {
+    @include breakpoint(xlarge) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include breakpoint(x-small) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 
-/*****  our-services button  *****/
+/*****  our-services  *****/
 .services-container  {
     padding-bottom: 50px;    
     background: rgb(132,132,132);
@@ -274,9 +285,8 @@
         padding-right: 30px;
     }
     @include breakpoint(x-small) {
-        padding-left: 0px;
-        padding-right: 0px;
-        padding-bottom: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .about-us-box {
         order: 1 !important;
@@ -556,20 +566,95 @@
         color: $white;
     }
 }
+/*****  Career *****/
+.careers-container {
+    position: relative;
+    &::after {
+        @include background-image('../images/career.png');
+        background-position: center;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 0;
+        right:0;
+        width: 50%;
+        height: 100%;
+        @include breakpoint(medium) {
+            display: none;
+        }
+    }
+    @include breakpoint(medium) {
+        margin-top: 0px;
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+        background-color: $white !important;
+    }
+    @include breakpoint(x-small) {
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+    .fixedWidth {
+        @include breakpoint(medium) {
+            flex-direction: column;
+        }
+    }
+    .about-us-box {
+        &.imgDiv {
+            display: none;
+            @include breakpoint(medium) {
+                display: block;
+            }
+        }
+    }
 
+}
+
+/*****  About *****/
 .about-us-container {
     margin-top: -80px;
+    position: relative;
+    &::after {
+        @include background-image('../images/about.png');
+        background-position: center;
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: 0;
+        right:0;
+        width: 50%;
+        height: 100%;
+        @include breakpoint(medium) {
+            display: none;
+        }
+    }
     @include breakpoint(xxxlarge) {
         margin-top: -60px;
+    }
+    @include breakpoint(medium) {
+        margin-top: 0px;
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+    @include breakpoint(x-small) {
+        padding-left:15px !important;
+        padding-right:15px !important;
+    }
+    .fixedWidth {
+        @include breakpoint(medium) {
+            flex-direction: column;
+        }
+    }
+    .about-us-box {
+        &.imgDiv {
+            display: none;
+            @include breakpoint(medium) {
+                display: block;
+            }
+        }
     }
     .about-us-box-text {
         @include breakpoint(medium) {
             margin: 0px !important;
-        }
-    }
-    .mw-80 {
-        @include breakpoint(medium) {
-            padding: 0px !important;
         }
     }
 }

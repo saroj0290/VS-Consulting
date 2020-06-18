@@ -224,9 +224,15 @@ img {
 }
 
 .fixedWidth {
-    max-width: 86%;
+    max-width: 70%;
     width: 100%;
     margin: 0px auto;
+    @include breakpoint(xxxxlarge) {
+        max-width: 80%;
+    }
+    @include breakpoint(xxxlarge) {
+        max-width: 86%;
+    }
     @include breakpoint(xxlarge) {
         max-width: 90%;
     }
@@ -239,6 +245,9 @@ img {
     max-width: 80%;
     width: 100%;
     margin: 0px auto;
+    @include breakpoint(xxxxlarge) {
+        max-width: 80%;
+    }
     @include breakpoint(xxxlarge) {
         max-width: 85%;
     }
